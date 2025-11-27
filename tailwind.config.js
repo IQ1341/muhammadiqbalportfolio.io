@@ -9,11 +9,22 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary: 'hsl(183, 42%, 37%)',
+          primary: "hsl(344,100%,37%)",
         dark: '#0f172a ',
         secondary: '#64748b',
         bgr: '#F7DDA4',       
       },
+
+  //     colors: {
+  // primary: "hsl(344,100%,37%)",
+
+  // dark: "hsl(230,15%,10%)",
+  // dark2: "hsl(230,10%,15%)",
+  // text: "hsl(0,0%,92%)",
+  // textSec: "hsl(0,0%,70%)",
+  // border: "hsl(224,20%,60%)",
+// },
+
       animation: {
         'fade-in': 'fadeIn 0.8s ease-out',
         'fade-in-up': 'fadeInUp 0.8s ease-out',

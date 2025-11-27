@@ -25,7 +25,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">MUHAMMADIQBAL</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">DEV-GO</a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -37,22 +37,22 @@
                     <nav id="nav-menu" class=" hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:dark:bg-transparent dark:bg-dark dark:shadow-slate-700">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class=" text-base text-dark py-2 mx-8 flex  group-hover:text-primary dark:text-white ">Home</a>
+                                <a href="#home" class=" nav-link text-base text-dark py-2 mx-8 flex  group-hover:text-primary dark:text-white ">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
+                                <a href="#about" class="text-base nav-link text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Project</a>
+                                <a href="#portfolio" class="text-base nav-link text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Project</a>
                             </li>
                             <li class="group">
-                                <a href="#pengalaman" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Experience</a>
+                                <a href="#pengalaman" class="text-base nav-link text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Experience</a>
                             </li>
                             <li class="group">
-                                <a href="#sertifikasi" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Certificate</a>
+                                <a href="#sertifikasi" class="text-base nav-link text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Certificate</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2  mx-8 flex group-hover:text-primary dark:text-white">Message</a>
+                                <a href="#service" class="text-base nav-link text-dark py-2  mx-8 flex group-hover:text-primary dark:text-white">Service</a>
                             </li>
                             <li class=" mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
@@ -97,26 +97,85 @@
                     Seorang full-stack developer yang antusias membangun solusi digital yang berdampak.
                     <span class="text-dark font-bold dark:text-white">Sedang terus belajar & berkembang!</span>
                 </p>
-                <a href="./dist/assets/Muhammad_Iqbal.pdf" 
-         download 
-         class="inline-flex items-center px-6 py-3 rounded-lg text-white bg-primary hover:bg-primary/90 transition duration-300 shadow-lg">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" 
-             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" 
-                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"></path>
-        </svg>
-        Download CV
-      </a>
+              <div class="flex flex-wrap gap-4 mt-6">
+
+  <!-- Tombol Download CV -->
+  <a href="./dist/assets/Muhammad_Iqbal.pdf" 
+    download 
+    class="inline-flex items-center px-4 py-3 rounded-xl text-white bg-primary hover:bg-primary/80 transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
+    
+    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" 
+        viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"></path>
+    </svg>
+
+    Download CV
+  </a>
+
+  <!-- Tombol Order Jasa -->
+  <button onclick="toggleModal(true)" 
+      class="inline-flex items-center px-4 py-3 rounded-xl text-primary bg-white border border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
+      
+<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+    viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round"
+        d="M4 5h16v10H4z" />
+  <path stroke-linecap="round" stroke-linejoin="round"
+        d="M2 17h20v1a2 2 0 01-2 2H4a2 2 0 01-2-2v-1z" />
+</svg>
+
+
+      Order Jasa
+  </button>
+
+</div>
+
             </div>
-            <div class="w-full self-end px-4 lg:w-1/2">
-                <div class="relative mt-10 lg:mt-0 lg:right-0">
-                    <img src="https://res.cloudinary.com/drqc3uakz/image/upload/v1750375543/profile_cvbyez.png" alt="Muhammad Iqbal" class="border-b-4 border-primary max-w-full mx-auto relative z-10">
-                </div>
+            <div class="w-full self-end px-4 lg:w-1/2 mt-10 lg:mt-0">
+<div class="relative mt-10  lg:mt-0 z-10 flex justify-center">
+
+  <!-- Foto besar + garis bawah -->
+  <div class="relative inline-block">
+    <img 
+      src="https://res.cloudinary.com/drqc3uakz/image/upload/v1750375543/profile_cvbyez.png"
+      alt="Muhammad Iqbal"
+      class="w-[500px] sm:w-[380px] lg:w-[500px]  drop-shadow-2xl rounded-xl object-cover object-center"
+    />
+
+    <!-- Garis bawah -->
+    <div class="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-b-xl"></div>
+  </div>
+
+  <!-- Floating Icon 1 (Frontend - Biru) -->
+  <div class="absolute -top-6 left-1/4 flex flex-col items-center animate-float-slow">
+    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+      <i class="fas fa-code text-2xl text-primary"></i>
+    </div>
+  </div>
+
+  <!-- Floating Icon 2 (Backend - Hijau, digeser kiri) -->
+  <div class="absolute top-1/2 right-3 flex flex-col items-center animate-float-fast">
+    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+      <i class="fas fa-server text-2xl text-primary"></i>
+    </div>
+  </div>
+
+  <!-- Floating Icon 3 (Dev - Ungu) -->
+  <div class="absolute bottom-1/4 lg:left-16 left-4 flex flex-col items-center animate-float-mid">
+    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+      <i class="fas fa-laptop-code text-2xl text-primary"></i>
+    </div>
+  </div>
+
+</div>
+
+
+
             </div>
         </div>
     </div>
 </section>
-
     <!-- Hero section end -->
 
     <!-- About section start -->
@@ -254,6 +313,62 @@
 
 
 
+
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-gray-50 dark:bg-dark">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-dark dark:text-white mb-10">
+      🚀 Skill & Tech Stack
+    </h2>
+
+    <div class="space-y-8">
+
+      <!-- Item -->
+      <div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold text-secondary">React</span>
+          <span class="font-semibold text-secondary skill-value">90%</span>
+        </div>
+        <div class="progress-wrapper w-full h-4 bg-gray-300/40 dark:bg-white/10 rounded-xl overflow-hidden">
+          <div class="progress-bar h-full rounded-xl skill-bar" data-value="90"></div>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold text-secondary">Node.js</span>
+          <span class="font-semibold text-secondary skill-value">85%</span>
+        </div>
+        <div class="progress-wrapper w-full h-4 bg-gray-300/40 dark:bg-white/10 rounded-xl overflow-hidden">
+          <div class="progress-bar h-full rounded-xl skill-bar" data-value="85"></div>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold text-secondary">IoT (ESP32, LoRa, MQTT)</span>
+          <span class="font-semibold text-secondary skill-value">95%</span>
+        </div>
+        <div class="progress-wrapper w-full h-4 bg-gray-300/40 dark:bg-white/10 rounded-xl overflow-hidden">
+          <div class="progress-bar h-full rounded-xl skill-bar" data-value="95"></div>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div>
+        <div class="flex justify-between mb-2">
+          <span class="font-semibold text-secondary">Tailwind CSS</span>
+          <span class="font-semibold text-secondary skill-value">90%</span>
+        </div>
+        <div class="progress-wrapper w-full h-4 bg-gray-300/40 dark:bg-white/10 rounded-xl overflow-hidden">
+          <div class="progress-bar h-full rounded-xl skill-bar" data-value="90"></div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -492,7 +607,7 @@
 
     
     <!-- layanan section start -->
-    <section id="layanan" class="pt-36 pb-24 bg-white dark:bg-slate-900">
+    <section id="service" class="pt-36 pb-24 bg-white dark:bg-slate-900">
         <div class="container">
             <!-- Heading -->
             <div class="w-full px-4">
@@ -588,6 +703,161 @@
         </div>
     </section>
     <!-- layanan section end -->
+
+
+    <section class="py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4" data-aos="fade-up">
+    <div class="text-center mb-14">
+      <h4 class="text-primary font-semibold text-lg mb-1">Testimonial</h4>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark dark:text-white mb-4">
+        Apa Kata Client?
+      </h2>
+      <p class="text-secondary max-w-2xl mx-auto">
+        Berikut adalah bukti asli dari chat client yang merasa puas bekerja sama dengan saya.
+      </p>
+    </div>
+
+    <!-- WRAPPER SCROLL AUTO -->
+    <div id="testimonial-scroll" 
+     class="overflow-x-auto flex gap-6 pb-4 snap-x snap-mandatory scroll-smooth">
+
+
+      <!-- === TESTIMONIAL CARD 1 === -->
+      <div 
+        class="min-w-[300px] md:min-w-[350px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-5 snap-center">
+        
+        <div class="w-full h-40 overflow-hidden rounded-lg mb-4">
+          <img src="./dist/img/testi.png" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-red-100 dark:bg-red-900 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary dark:text-red-300"
+              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z
+                   M4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Andi Pratama</h3>
+            <p class="text-gray-500 text-sm">Mahasiswa TI</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+          “Pelayanan cepat dan hasil codingannya rapi!”
+        </p>
+      </div>
+
+      <!-- === CARD 2 === -->
+      <div class="min-w-[300px] md:min-w-[350px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-5 snap-center">
+        <div class="w-full h-40 overflow-hidden rounded-lg mb-4">
+          <img src="./dist/img/testi.png" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-green-600 dark:text-green-300"
+              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z
+                   M4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Salsabila</h3>
+            <p class="text-gray-500 text-sm">Pemilik UMKM</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+          “Aplikasinya sesuai request dan prosesnya cepat!”
+        </p>
+      </div>
+
+      <!-- === CARD 3 === -->
+      <div class="min-w-[300px] md:min-w-[350px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-5 snap-center">
+        <div class="w-full h-40 overflow-hidden rounded-lg mb-4">
+          <img src="./dist/img/testi.png" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 dark:text-purple-300"
+              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z
+                   M4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Budi Hartono</h3>
+            <p class="text-gray-500 text-sm">Dosen & Peneliti</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+          “Untuk proyek IoT, hasilnya sangat memuaskan!”
+        </p>
+      </div>
+      <div class="min-w-[300px] md:min-w-[350px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-5 snap-center">
+        <div class="w-full h-40 overflow-hidden rounded-lg mb-4">
+          <img src="assets/ss3.jpg" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 dark:text-purple-300"
+              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z
+                   M4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Budi Hartono</h3>
+            <p class="text-gray-500 text-sm">Dosen & Peneliti</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+          “Untuk proyek IoT, hasilnya sangat memuaskan!”
+        </p>
+      </div>
+      <div class="min-w-[300px] md:min-w-[350px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden p-5 snap-center">
+        <div class="w-full h-40 overflow-hidden rounded-lg mb-4">
+          <img src="assets/ss3.jpg" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600 dark:text-purple-300"
+              fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z
+                   M4.5 20.25a8.25 8.25 0 1115 0v.75H4.5v-.75z" />
+            </svg>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg text-gray-900 dark:text-white">Budi Hartono</h3>
+            <p class="text-gray-500 text-sm">Dosen & Peneliti</p>
+          </div>
+        </div>
+
+        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+          “Untuk proyek IoT, hasilnya sangat memuaskan!”
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
      
 <!-- sertifikasi section start -->
 <section id="sertifikasi" class="pt-36 pb-24 bg-slate-100 dark:bg-slate-900">
@@ -856,9 +1126,9 @@
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
                     <h2 class="font-bold text-3xl text-white mb-5">MUHAMMADIQBAL</h2>
                     <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-                    <p>iqbalnation574@gmail.com</p>
-                    <p>jl. Letnan Nidien 01 Kec. Arjasa</p>
-                    <p>Situbondo</p>
+                    <p>muhammadiqb4l03@gmail.com</p>
+                    <p>Jalan Prakansaat II No 24, Cisaranten Endah,Arcamanik</p>
+                    <p>Bandung</p>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
                     <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
@@ -941,6 +1211,96 @@
           </svg>      
     </a>
     <!-- back to top end -->
+
+    <!-- POPUP ORDER FORM -->
+<div id="orderModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4" onclick="toggleModal(false)">
+  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl w-full max-w-lg p-6 relative" onclick="event.stopPropagation()">
+
+    <!-- Tombol X -->
+    <button onclick="toggleModal(false)" 
+            class="absolute top-3 right-3 text-slate-400 hover:text-red-500 text-2xl font-bold">
+      &times;
+    </button>
+
+    <h2 class="text-xl font-bold text-dark dark:text-white mb-4 text-center">
+      Form Order Jasa
+    </h2>
+
+    <form id="orderForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+      <!-- Grid 2 kolom -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Kategori Klien</label>
+          <select id="kategori_client" required class="w-full p-2 rounded-lg border dark:bg-slate-700">
+            <option value="" disabled selected>-- Pilih Kategori --</option>
+            <option value="Individu">Individu</option>
+            <option value="Instansi">Instansi</option>
+            <option value="Mahasiswa / Skripsi">Mahasiswa / Skripsi</option>
+            <option value="Kelompok / Tim">Kelompok / Tim</option>
+            <option value="UMKM / Bisnis">UMKM / Bisnis</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Nama</label>
+          <input id="nama" type="text" required class="w-full p-2 rounded-lg border dark:bg-slate-700">
+        </div>
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Email</label>
+          <input id="email" type="email" class="w-full p-2 rounded-lg border dark:bg-slate-700">
+        </div>
+
+        <div>
+          <label class="font-medium test-sm text-dark dark:text-white">Phone</label>
+          <input id="phone" type="text" class="w-full p-2 rounded-lg border dark:bg-slate-700">
+        </div>
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Jenis Layanan</label>
+          <select id="layan" required class="w-full p-2 rounded-lg border dark:bg-slate-700">
+            <option value="" disabled selected>-- Pilih Layanan --</option>
+            <option value="Website (Frontend)">Website (Frontend)</option>
+            <option value="Website (Fullstack)">Website (Fullstack)</option>
+            <option value="Aplikasi Mobile">Aplikasi Mobile</option>
+            <option value="Integrasi API">Integrasi API</option>
+            <option value="IoT Project">IoT Project</option>
+            <option value="Skripsi / Project Akhir">Skripsi / Project Akhir</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Deadline</label>
+          <input id="deadline" type="date" class="w-full p-2 rounded-lg border dark:bg-slate-700">
+        </div>
+
+        <div>
+          <label class="font-medium text-sm text-dark dark:text-white">Prioritas Project</label>
+          <select id="prioritas" class="w-full p-2 rounded-lg border dark:bg-slate-700">
+            <option value="" disabled selected>-- Pilih Prioritas --</option>
+            <option value="Normal">Normal</option>
+            <option value="Penting">Penting</option>
+            <option value="Mendesak">Mendesak</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div>
+        <label class="font-medium text-sm text-dark dark:text-white">Detail Project</label>
+        <textarea id="detail" class="w-full p-3 rounded-lg border dark:bg-slate-700" rows="4" required></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary/90 transition shadow-lg">
+        Kirim Order ke WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
 
    
 
@@ -1041,6 +1401,42 @@
     });
   });
 
+  const scroller = document.getElementById("testimonial-scroll");
+
+  function autoScroll() {
+    let maxScroll = scroller.scrollWidth - scroller.clientWidth;
+
+    scroller.scrollBy({
+      left: 350,  // Geser per-card
+      behavior: "smooth"
+    });
+
+    // Jika sudah sampai kanan → kembali ke awal
+    if (scroller.scrollLeft + 400 >= maxScroll) {
+      setTimeout(() => {
+        scroller.scrollTo({ left: 0, behavior: "smooth" });
+      }, 1500);
+    }
+  }
+
+  // Scroll otomatis setiap 3 detik
+  setInterval(autoScroll, 3000);
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const value = bar.getAttribute('data-value');
+        bar.style.transition = "width 2s ease";
+        bar.style.width = value + "%";
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll(".skill-bar").forEach(bar => observer.observe(bar)); 
+
+
 </script>
+
 </body>
 </html>
