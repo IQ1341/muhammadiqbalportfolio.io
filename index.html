@@ -81,102 +81,130 @@
     </header>
     <!-- header end -->
    
-    <!-- Hero section start -->
-    <section id="home" class="pt-36 dark:bg-dark">
-    <div class="container">
-        <div class="flex flex-wrap">
-            <div class="w-full self-center px-4 lg:w-1/2">
-                <h1 class="text-base font-semibold text-primary md:text-xl ">
-                    Halo! Saya
-                    <span class="block font-bold text-dark text-4xl md:text-5xl dark:text-white">Muhammad Iqbal</span>
-                </h1>
-                <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
-                    Saya seorang | <span id="typed" class="text-dark dark:text-white"></span>
-                </h2>
-                <p class="font-medium text-secondary mb-10 leading-relaxed">
-                    Seorang full-stack developer yang antusias membangun solusi digital yang berdampak.
-                    <span class="text-dark font-bold dark:text-white">Sedang terus belajar & berkembang!</span>
-                </p>
-              <div class="flex flex-wrap gap-4 mt-6">
+<section id="home" class="pt-36 dark:bg-dark">
+  <div class="container">
+    <div class="flex flex-wrap">
 
-  <!-- Tombol Download CV -->
-  <a href="./dist/assets/Muhammad_Iqbal.pdf" 
-    download 
-    class="inline-flex items-center px-4 py-3 rounded-xl text-white bg-primary hover:bg-primary/80 transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
-    
-    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" 
-        viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" 
-            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"></path>
-    </svg>
+      <!-- LEFT TEXT -->
+      <div class="w-full self-center px-4 lg:w-1/2">
+        <h1 class="text-base font-semibold text-primary md:text-xl">
+          Halo! Saya
+          <span class="block font-bold text-dark text-4xl md:text-5xl dark:text-white">Muhammad Iqbal</span>
+        </h1>
 
-    Download CV
-  </a>
+        <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">
+          Saya seorang | <span id="typed" class="text-dark dark:text-white"></span>
+        </h2>
 
-  <!-- Tombol Order Jasa -->
-  <button onclick="toggleModal(true)" 
-      class="inline-flex items-center px-4 py-3 rounded-xl text-primary bg-white border border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
-      
-<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2"
-    viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round"
-        d="M4 5h16v10H4z" />
-  <path stroke-linecap="round" stroke-linejoin="round"
-        d="M2 17h20v1a2 2 0 01-2 2H4a2 2 0 01-2-2v-1z" />
-</svg>
+        <p class="font-medium text-secondary mb-10 leading-relaxed">
+          Seorang full-stack developer yang antusias membangun solusi digital yang berdampak.
+          <span class="text-dark font-bold dark:text-white">Sedang terus belajar & berkembang!</span>
+        </p>
 
+        <!-- BUTTONS -->
+        <div class="flex flex-wrap gap-4 mt-6">
 
-      Order Jasa
-  </button>
+          <a href="./dist/assets/Muhammad_Iqbal.pdf" download
+            class="inline-flex items-center px-4 py-3 rounded-xl text-white bg-primary hover:bg-primary/80 transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
 
-</div>
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"></path>
+            </svg>
+            Download CV
+          </a>
 
-            </div>
-            <div class="w-full self-end px-4 lg:w-1/2 mt-10 lg:mt-0">
-<div class="relative mt-10  lg:mt-0 z-10 flex justify-center">
+          <button onclick="toggleModal(true)"
+            class="inline-flex items-center px-4 py-3 rounded-xl text-primary bg-white border border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-md hover:shadow-xl font-semibold">
 
-  <!-- Foto besar + garis bawah -->
-  <div class="relative inline-block">
-    <img 
-      src="https://res.cloudinary.com/drqc3uakz/image/upload/v1750375543/profile_cvbyez.png"
-      alt="Muhammad Iqbal"
-      class="w-[500px] sm:w-[380px] lg:w-[500px]  drop-shadow-2xl rounded-xl object-cover object-center"
-    />
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v10H4z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2 17h20v1a2 2 0 01-2 2H4a2 2 0 01-2-2v-1z" />
+            </svg>
 
-    <!-- Garis bawah -->
-    <div class="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-b-xl"></div>
-  </div>
+            Order Jasa
+          </button>
 
-  <!-- Floating Icon 1 (Frontend - Biru) -->
-  <div class="absolute -top-6 left-1/4 flex flex-col items-center animate-float-slow">
-    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
-      <i class="fas fa-code text-2xl text-primary"></i>
-    </div>
-  </div>
-
-  <!-- Floating Icon 2 (Backend - Hijau, digeser kiri) -->
-  <div class="absolute top-1/2 right-3 flex flex-col items-center animate-float-fast">
-    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
-      <i class="fas fa-server text-2xl text-primary"></i>
-    </div>
-  </div>
-
-  <!-- Floating Icon 3 (Dev - Ungu) -->
-  <div class="absolute bottom-1/4 lg:left-16 left-4 flex flex-col items-center animate-float-mid">
-    <div class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
-      <i class="fas fa-laptop-code text-2xl text-primary"></i>
-    </div>
-  </div>
-
-</div>
-
-
-
-            </div>
         </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="w-full self-end px-4 lg:w-1/2 mt-10 lg:mt-0">
+        <div class="relative mt-10 lg:mt-0 z-10 flex justify-center">
+
+          <!-- Foto -->
+          <div class="relative inline-block">
+            <img src="https://res.cloudinary.com/drqc3uakz/image/upload/v1750375543/profile_cvbyez.png" alt="Muhammad Iqbal"
+              class="w-[500px] sm:w-[380px] lg:w-[500px] drop-shadow-2xl rounded-xl object-cover object-center" />
+
+            <div class="absolute bottom-0 left-0 w-full h-1 bg-primary rounded-b-xl"></div>
+          </div>
+
+          <!-- Floating Icon 1 -->
+          <div class="absolute -top-6 left-1/4 flex flex-col items-center animate-float-slow">
+            <div
+              class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+              <i class="fas fa-code text-2xl text-primary"></i>
+            </div>
+          </div>
+
+          <!-- Floating Icon 2 -->
+          <div class="absolute top-1/2 right-3 flex flex-col items-center animate-float-fast">
+            <div
+              class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+              <i class="fas fa-server text-2xl text-primary"></i>
+            </div>
+          </div>
+
+          <!-- Floating Icon 3 -->
+          <div class="absolute bottom-1/4 lg:left-16 left-4 flex flex-col items-center animate-float-mid">
+            <div
+              class="w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-xl border-2 border-primary flex items-center justify-center">
+              <i class="fas fa-laptop-code text-2xl text-primary"></i>
+            </div>
+          </div>
+
+          <!-- CHAT GREETING -->
+<!-- CHAT GREETING (responsive small) -->
+<div
+  class="absolute -top-4 -right-2 lg:-top-8 
+         bg-white dark:bg-slate-800 shadow-xl 
+         rounded-xl px-2 py-2
+         w-fit max-w-[150px] md:max-w-[180px]
+         border border-primary
+         flex items-center gap-2 
+         animate-fade-in">
+
+  <!-- Icon -->
+  <div class="w-12 h-6 md:w-12 md:h-7 
+              rounded-full bg-primary 
+              flex items-center justify-center 
+              shadow-md ring-2 ring-primary/30">
+    <i class="fas fa-robot text-white text-[10px] md:text-xs"></i>
+  </div>
+
+  <!-- Text -->
+  <p class="text-xs md:text-sm font-medium text-dark dark:text-white leading-tight">
+    <span id="chatType"></span>
+  </p>
+</div>
+
+
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
+
+
     <!-- Hero section end -->
+
+    <!-- Chat Animation Section -->
+
+
 
     <!-- About section start -->
     <section id="about" class="pt-36 pb-20 dark:bg-dark ">
@@ -184,14 +212,14 @@
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <h2 class="font-bold text-3xl text-dark mb-5 max-w-md lg:text-4xl dark:text-white">Selamat datang di portfolio website saya!</h2>
+                    <h2 class="font-bold text-3xl text-dark mb-5 max-w-md lg:text-4xl dark:text-white">Selamat datang di website saya!</h2>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-          Saya adalah seorang <span class="text-primary font-semibold">Fullstack Web Developer</span> yang berpengalaman dalam mengembangkan aplikasi web dari sisi frontend maupun backend. Dengan pendekatan yang berfokus pada performa, fungsionalitas, dan user experience, saya berkomitmen untuk menghadirkan solusi digital yang efisien, modern, dan scalable.
+          Saya adalah seorang <span class="text-primary font-semibold">Fullstack Developer</span> yang berfokus pada pengembangan solusi digital yang fungsional, mudah digunakan, dan dapat disesuaikan dengan berbagai kebutuhan. Saya berpengalaman dalam membangun aplikasi dari sisi frontend maupun backend, serta memastikan setiap proyek memiliki performa yang baik, tampilan yang modern, dan struktur yang mudah dikembangkan.
         </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Terhubung dan Berkolaborasi!</h3>
-                    <p class="font-medium text-secondary mb-6 max-w-xl">Portofolio ini merupakan rangkuman dari berbagai proyek yang telah saya kerjakan dengan semangat belajar dan inovasi. Saya percaya bahwa kerja sama, diskusi terbuka, dan masukan yang membangun adalah kunci untuk terus berkembang. Jangan ragu untuk menghubungi saya melalui media sosial yang tersedia—saya sangat terbuka untuk peluang kolaborasi maupun diskusi seputar teknologi!</p>
+                    <p class="font-medium text-secondary mb-6 max-w-xl">Portofolio ini berisi kumpulan proyek yang telah saya kerjakan di berbagai bidang pengembangan web, mobile, dan IoT. Saya selalu berupaya menghadirkan solusi yang fungsional, modern, dan sesuai kebutuhan. Jika Anda tertarik bekerja sama atau membutuhkan jasa pengembangan, silakan hubungi saya melalui media sosial yang tersedia.</p>
                     <div class="flex items-center">
                         <!-- youtube -->
                         <a href="https://youtube.com/@ITUnivers03" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white text-secondary">
@@ -1484,7 +1512,20 @@
 
   document.querySelectorAll(".skill-bar").forEach(bar => observer.observe(bar)); 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Hai kak! Ada yang bisa saya bantu ?";
+  const target = document.getElementById("chatType");
 
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      target.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 40);
+    }
+  }
+  type();
+});
 </script>
 
 </body>
